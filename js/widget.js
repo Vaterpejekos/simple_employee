@@ -8,7 +8,7 @@ let tmpl = document.querySelector('[data-tmpl]').innerHTML;
 window.addEventListener('load', sendRequest)
 
 function sendRequest(){
-	let url = '../data/employees.json';
+	let url = './data/employees.json';
 
 	fetch(url)
 		.then( result => result.json() )
